@@ -1,0 +1,11 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+a {
+    margin-left: 5px;
+}
+
+nav {
+    background-color: #3f51b5;
+}

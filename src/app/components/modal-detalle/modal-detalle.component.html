@@ -1,0 +1,26 @@
+<div *ngIf="resp.status == 1">
+
+    <div class="row">
+        <div class="col-12">
+            <p>
+                <span class="h6 text-center">Nombre: </span><br>
+                <span class="text-muted">{{ resp.data.Nombre | uppercase }} {{ resp.data.Apellido | uppercase }}</span>
+            </p>
+            <p>
+                <span class="h6 text-center">Correo: </span><br>
+                <span class="text-muted">{{ resp.data.Correo }}</span>
+            </p>
+            <p>
+                <span class="h6 text-center">Contraseña inicial: </span><br>
+                <span class="text-muted">u.{{ resp.data.DocumentoIdentidad }}</span>
+            </p>
+        </div>
+        <div class="col-12">
+            <a mat-raised-button class="btn-block mt-4 mb-2" href="https://iauth.azurewebsites.net/?code=updsnet" target="_blank" color="primary">Iniciar Sesion</a>
+        </div>
+    </div>
+
+</div>
+<div *ngIf="resp.status != 1">
+    <p class="h5 text-center"> No hemos encontrado tu correo académico, verifica que los datos del formulario estén escritos correctamente, o contáctanos mediante las plataformas habilitadas </p>
+</div>
