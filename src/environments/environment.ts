@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlBase: 'https://portal.upds.edu.bo/gapi/request/service/?path=service/updsnet/access/'
+  urlBase: 'https://portal.upds.edu.bo/gapi/request/service/?path=updsnet/access/'
 };
 
 /*

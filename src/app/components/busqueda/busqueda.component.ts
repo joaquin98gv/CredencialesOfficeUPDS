@@ -13,6 +13,7 @@ import { ModalDetalleComponent } from '../modal-detalle/modal-detalle.component'
 export class BusquedaComponent implements OnInit {
   form: FormGroup;
   data: any;
+  startDate = new Date(1998, 0, 1);
   constructor(
     private fb: FormBuilder,
     private _serviceEstudiante: EstudianteService,
